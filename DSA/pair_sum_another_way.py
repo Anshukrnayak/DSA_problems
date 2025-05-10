@@ -1,9 +1,4 @@
 
-
-# pair sum problem of the array : 
-import numpy as np
-
-
 def pair_sum(arr,k):
 
     count=0
@@ -46,7 +41,7 @@ def pair_sum(arr,k,i,j,count=0):
 
 def main():
     print('This pair sum problem : ')
-    arr=np.array([4,3,5,2,1])
+    arr=[4,3,5,2,1]
     arr.sort()
     print(arr)
 

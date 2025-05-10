@@ -6,17 +6,12 @@ def sqrt_n(n):
     mid=s+(e-s)//2 
 
     while s<=e:
-
-        if mid*mid==n: return mid 
-
+        if mid*mid==n: return mid
         if mid*mid>n: e=mid
-
         else :
             ans=mid 
             s=mid-1
-
         mid=s+(e-s)//2
-
     return ans     
 
 
