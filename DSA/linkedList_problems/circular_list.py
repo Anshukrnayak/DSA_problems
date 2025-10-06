@@ -22,34 +22,26 @@ class LinkedList:
 
         index=self.head
         while index.next is not None: index=index.next
-
         index.next=temp
-    
-    
+
     def check_circular_list(self):
         first=self.head
         slow=self.head
 
         while first.next is not None and slow.next is not None:
             if slow==first: return True
-
             slow=slow.next
-            fast=fast.next.next 
-        
+            fast=fast.next.next
         return False
-
 
     def dislay_list(self):
         temp=self.head
-
         while temp is not None:
             print(temp.data)
             temp=temp.next
 
-
 def main():
     arr=np.arange(15)
-    
     l=LinkedList()
     for i in arr: l.inseartion(i)
 
@@ -57,8 +49,6 @@ def main():
     ans=l.check_circular_list()
 
     print(f'Is circular list : {ans}')
-
-
 
 if __name__=='__main__': main()
 
